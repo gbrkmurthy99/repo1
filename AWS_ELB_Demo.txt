@@ -1,0 +1,136 @@
+sudo yum install httpd
+
+sudo service httpd status
+sudo service httpd start
+
+Server one
+
+<!DOCTYPE html>
+<html>
+<body style="background-color:powderblue;">
+
+<h1>Welcome To AWS ELB Demo</h1>
+<p>Mithun Technologies</p>
+
+</body>
+</html>
+
+
+Server 2
+
+<!DOCTYPE html>
+<html>
+<body style="background-color:orange;">
+
+<h1>Welcome To AWS ELB Demo</h1>
+<p>Mithun Technologies</p>
+
+</body>
+</html>
+
+
+#!/bin/bash
+sudo service httpd start
+sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+sudo yum install siege
+Configure policy with 4 %
+
+siege -c100 -t2M  http://ec2-52-66-87-120.ap-south-1.compute.amazonaws.com
+
+
+ssh -i "Devopspractice.pem" root@ec2-52-66-87-120.ap-south-1.compute.amazonaws.com
+
+ssh -i "Devopspractice.pem" ec2-user@ec2-52-66-250-170.ap-south-1.compute.amazonaws.com
+ssh -i "Devopspractice.pem" ec2-user@ec2-13-233-155-231.ap-south-1.compute.amazonaws.com
+
+
+ELB -- > Mumabi
+
+EC2 -- AZ1 -->Mumbai
+EC2 --AZ2 -- > Mumabi
+
+
+
+EC1 --> AZ1
+
+
+EC3 --> AZ2 (Loning)
+
+
+
+
+
+
+
+
+
+EC2- AZ1 --> Singapore
+
+
+
+
+htpp://ELBIP/videos
+/videos
+
+  --> TG1 
+  
+http://ELBIP/images
+ /images
+ --> TG2
+ 
+Threslod 5
+every 5 mins
+
+  --> EC2
+  
+6:05 --> 
+
+Error
+
+
+6:10 -->
+
+Error
+
+
+
+
+
+
+
+Redhat OS t2.micro
+
+  httpd
+  
+  
+  
+AMI
+ OS+Out Code & Tomcat 
+                 war
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+   
+  
+  
+  
+
+ 
+ 
+
+
+
+
+   
+
+    
+  
+
+
+
+
